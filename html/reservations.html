@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Reservas</h1>
+    <form id="reservationForm">
+        <label for="resource">Recurso:</label>
+        <input type="text" id="resource" name="resource" required>
+        <label for="startTime">Hora de Inicio:</label>
+        <input type="datetime-local" id="startTime" name="startTime" required>
+        <label for="endTime">Hora de Fin:</label>
+        <input type="datetime-local" id="endTime" name="endTime" required>
+        <button type="submit">Crear Reserva</button>
+    </form>
+    <h2>Mis Reservas</h2>
+    <ul id="reservationList"></ul>
+    <script src="js/reservations.js"></script>
+</body>
+</html>
